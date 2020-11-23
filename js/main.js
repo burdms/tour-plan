@@ -8,4 +8,10 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev",
   },
+
+  // Keyboard swiping
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
 });
