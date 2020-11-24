@@ -619,7 +619,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -639,6 +639,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -673,7 +674,7 @@ template {
 }
 
 .booking {
-  max-width: 350px;
+  width: 350px;
   min-height: 210px;
   padding: 28px;
   font-family: 'Nunito', sans-serif;
@@ -792,11 +793,15 @@ template {
   width: 347px;
   height: 213px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
   }
 }
 
@@ -824,6 +829,30 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-booking {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .slider {
+    width: 100%;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
   }
 }
 
@@ -898,11 +927,53 @@ template {
     margin-bottom: 10px;
     margin-left: 0;
   }
+  .hotel-booking {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-booking__map {
+    margin-top: 30px;
+  }
+  .slider {
+    height: 350px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .hotel-booking__map {
+    margin-top: 20px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+  .slider {
+    height: 250px;
+  }
+}
+
+@media (max-width: 380px) {
+  .slider {
+    height: 170px;
+  }
+  .slider-button--next {
+    right: 10px;
+  }
+  .slider-button--prev {
+    left: 10px;
+  }
+  .map {
+    height: 170px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
