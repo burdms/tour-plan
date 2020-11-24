@@ -15,3 +15,35 @@ var mySwiper = new Swiper(".swiper-container", {
     onlyInViewport: true,
   },
 });
+
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map(
+      "map",
+      {
+        center: [7.89074638, 98.29473329],
+
+        zoom: 17,
+      },
+      {
+        searchControlProvider: "yandex#search",
+      }
+    ),
+    myGeoObject = new ymaps.GeoObject(
+      {
+        geometry: {
+          type: "Point",
+          coordinates: [7.89074638, 98.29473329],
+        },
+        properties: {
+          iconContent: "DoubleTree",
+          hintContent: "Phuket Banthai Resort",
+        },
+      },
+      {
+        preset: "islands#blackStretchyIcon",
+      }
+    );
+
+  myMap.geoObjects.add(myGeoObject);
+}
