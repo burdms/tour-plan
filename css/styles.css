@@ -13,6 +13,12 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -446,7 +452,6 @@ template {
   right: 0;
   width: 65px;
   height: 100%;
-  border: none;
   background-color: #EC1F46;
 }
 
@@ -622,12 +627,9 @@ template {
   z-index: 99;
   width: 30px;
   height: 30px;
-  border: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;
-  cursor: pointer;
-  outline: none;
   background-color: transparent;
 }
 
