@@ -36,14 +36,26 @@ function init() {
           coordinates: [7.89074638, 98.29473329],
         },
         properties: {
-          iconContent: "DoubleTree",
           hintContent: "Phuket Banthai Resort",
+          balloonContentHeader: "DoubleTree by Hilton",
+          balloonContentBody: "Phuket Banthai Resort",
         },
       },
       {
-        preset: "islands#blackStretchyIcon",
+        iconColor: "#1faee9",
       }
     );
 
   myMap.geoObjects.add(myGeoObject);
+  // .add(
+  //   new ymaps.Placemark(
+  //     [7.89074638, 98.29473329],
+  //     {
+  //       balloonContent: "DoubleTree by Hilton Phuket Banthai Resort",
+  //     },
+  //     {
+  //       preset: "islands#blueHotelIcon",
+  //     }
+  //   )
+  // );
 }
