@@ -796,6 +796,12 @@ template {
   overflow: hidden;
 }
 
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
