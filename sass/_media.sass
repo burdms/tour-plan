@@ -25,6 +25,7 @@
         font-size: 12px
         line-height: 15px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &-booking
@@ -37,6 +38,10 @@
     width: 340px
   .map
     width: 340px
+  .newsletter
+    padding: 92px 0 93px 0
+    &-wrapper
+      max-width: 700px
 
 @media (max-width: 767px)
   .container
@@ -63,7 +68,7 @@
         background-color: $text-color
   .hotel
     padding-top: 5px
-    padding-bottom: 20px
+    padding-bottom: 40px
     &-wrapper
       align-items: start
       justify-content: space-between
@@ -93,6 +98,21 @@
     width: 100%
   .map
     width: 100%
+  .newsletter
+    padding: 76px 0 83px 0
+    &-wrapper
+      align-items: start
+      flex-direction: column
+      max-width: 576px
+      width: 92%
+    &-title
+      max-width: 350px
+      margin-bottom: 37px
+      font-size: 20px
+      line-height: 25px
+    &__strong
+      font-size: 30px
+      line-height: 48px
 
 @media (max-width: 576px)
   .logo
@@ -116,5 +136,10 @@
         left: 10px
   .map
     height: 170px
+  .newsletter
+    &-title
+      max-width: 280px
+    &__subscribe
+      max-width: 280px
   
   
