@@ -1104,6 +1104,9 @@ template {
   .newsletter {
     padding: 92px 0 93px 0;
   }
+  .newsletter::after {
+    opacity: 1;
+  }
   .newsletter-wrapper {
     max-width: 700px;
   }

@@ -85,6 +85,6 @@ function init() {
 $(".newsletter").parallax({
   imageSrc: "../img/newsletter-background.jpg",
   speed: 0,
-  androidFix: false,
-  iosFix: false,
+  // androidFix: false,
+  // iosFix: false,
 });
