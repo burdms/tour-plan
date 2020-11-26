@@ -20,6 +20,7 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: true,
   effect: "slide",
+
   // Navigation arrows
   navigation: {
     nextEl: ".reviews-slider__button--next",
