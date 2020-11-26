@@ -43,6 +43,21 @@
     padding: 92px 0 93px 0
     &-wrapper
       max-width: 700px
+  .reviews
+    padding-bottom: 60px
+    &-title
+      margin-bottom: 50px
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__item
+        padding-left: 62px
+        padding-right: 62px
+        max-width: 580px
+        &::before, &::after
+          display: none
+      &__text
+        max-width: 455px
 
 @media (max-width: 767px)
   .container
@@ -114,6 +129,23 @@
     &__strong
       font-size: 30px
       line-height: 48px
+  .reviews
+    padding-bottom: 50px
+    &-title
+      margin-bottom: 42px
+    &-slider
+      &__item
+        padding-left: 30px
+        padding-right: 30px
+        padding-bottom: 36px
+      &__button
+        top: 30px
+        left: 50%
+        transform: translateX(-50%)
+        &--prev
+          margin-left: -75px
+        &--next
+          margin-left: 75px
 
 @media (max-width: 576px)
   .logo
@@ -126,6 +158,12 @@
       height: 250px
     &__slider
       margin-bottom: 20px
+  .reviews
+    &-title
+      margin: 0 auto 42px
+      max-width: 245px
+      font-size: 18px
+      line-height: 23px    
 
 @media (max-width: 380px)
   .hotel
