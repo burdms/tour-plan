@@ -82,4 +82,4 @@ function init() {
 //   scale: 1.5,
 // });
 
-$(".newsletter").parallax({ imageSrc: "../img/newsletter-background.jpg", speed: 0 });
+// $(".newsletter").parallax({imageSrc: "../img/newsletter-background.jpg", speed: 0});
