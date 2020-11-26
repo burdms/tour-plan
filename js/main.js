@@ -82,9 +82,4 @@ function init() {
 //   scale: 1.5,
 // });
 
-$(".newsletter").parallax({
-  imageSrc: "../img/newsletter-background.jpg",
-  speed: 0,
-  // androidFix: false,
-  // iosFix: false,
-});
+$(".newsletter").parallax({ imageSrc: "../img/newsletter-background.jpg", speed: 0 });
