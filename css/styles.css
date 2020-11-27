@@ -1117,6 +1117,22 @@ template {
   color: #ffffff;
 }
 
+.card__title_1 {
+  max-width: 145px;
+}
+
+.card__title_2 {
+  max-width: 153px;
+}
+
+.card__title_3 {
+  max-width: 161px;
+}
+
+.card__title_4 {
+  max-width: 200px;
+}
+
 .card__button {
   padding: 7px 22px;
   font-family: 'Nunito', sans-serif;
