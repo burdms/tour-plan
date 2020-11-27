@@ -1443,6 +1443,12 @@ template {
     max-width: 280px;
   }
   .newsletter__subscribe {
+    width: 100%;
+  }
+  .reviews-slider__text {
+    max-width: 219px;
+  }
+  .reviews-slider__item {
     max-width: 280px;
   }
 }
