@@ -1188,12 +1188,19 @@ template {
     margin-left: 47px;
   }
   .navbar-menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-top: 22px;
     padding-bottom: 22px;
+    padding-left: 14px;
   }
   .navbar-menu__item {
     font-size: 12px;
     line-height: 15px;
+  }
+  .navbar-menu__item:not(:last-child) {
+    margin-right: 28px;
   }
   .breadcrumb-list__item:not(:last-child)::after {
     margin-left: 1px;
