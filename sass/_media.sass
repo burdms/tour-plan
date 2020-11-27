@@ -6,7 +6,7 @@
       width: 590px
   .card
     width: 230px
-    
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -24,11 +24,17 @@
     &-menu
       padding-top: 22px
       padding-bottom: 22px
-      &__link
+      &__item
         font-size: 12px
         line-height: 15px
+  .breadcrumb
+    &-list
+      &__item
+        &:not(:last-child)
+          &::after
+            margin-left: 1px
   .hotel
-    padding-bottom: 60px
+    padding-bottom: 57px
     &-grid
       flex-direction: column
     &-booking
@@ -38,12 +44,17 @@
     &__slider
       margin-bottom: 30px
   .booking
+    padding-left: 22px
+    padding-right: 22px
     width: 340px
+    &-price
+      &__pricetag
+        line-height: 30px
   .map
     width: 340px
   .newsletter
     padding: 92px 0 93px 0
-    &::after  
+    &::after
       opacity: 1
     &-wrapper
       max-width: 700px
@@ -73,7 +84,7 @@
   .container
     max-width: 576px
     width: 92%
-  .navbar      
+  .navbar
     &-menu, &__user, &__search
       display: none
   .menu
@@ -133,12 +144,12 @@
       width: 92%
     &-title
       max-width: 350px
-      margin-bottom: 37px
+      margin-bottom: 32px
       font-size: 20px
       line-height: 25px
-    &__strong
-      font-size: 30px
-      line-height: 48px
+      &__strong
+        font-size: 30px
+        line-height: 48px
   .reviews
     padding-bottom: 50px
     &-title
@@ -153,9 +164,9 @@
         left: 50%
         transform: translateX(-50%)
         &--prev
-          margin-left: -75px
+          margin-left: -88px
         &--next
-          margin-left: 75px
+          margin-left: 88px
   .card
     max-width: 278px
     width: 48%
@@ -186,14 +197,30 @@
       line-height: 23px
     &__card
       margin-bottom: 20px
+      &:nth-child(2)
+        margin-bottom: 28px
   .card
     max-width: 576px
-    width: 100% 
+    width: 100%
 
 @media (max-width: 380px)
+  .container
+    // костыль?
+    max-width: 0
+    min-width: 280px
+  .navbar
+    &-top
+      padding-top: 24px
   .hotel
+    &-info
+      padding-bottom: 38px
+    &-stars
+      margin-right: 14px
+      margin-top: 5px
+    &-name
+      line-height: 26px
     &-slider
-      height: 170px
+      height: 180px
       &__button
         &--next
           right: 10px
@@ -202,15 +229,16 @@
   .map
     height: 170px
   .newsletter
+    &-wrapper
+      padding-left: 7px
+      padding-right: 7px
     &-title
       max-width: 280px
     &__subscribe
       width: 100%
   .reviews
     &-slider
-      &__text 
+      &__text
         max-width: 219px
       &__item
         max-width: 280px
-  
-  

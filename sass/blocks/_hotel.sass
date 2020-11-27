@@ -26,7 +26,13 @@
     font-size: 12px
     line-height: 15px
   &-stars
+    display: flex
+    align-items: center
+    height: 8px
     flex-basis: 100%
+    &__item
+      &:not(:last-child)
+        margin-right: 3px
   &-grid
     display: flex
     justify-content: space-between

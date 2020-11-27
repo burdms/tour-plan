@@ -419,12 +419,15 @@ template {
   color: #ffffff;
 }
 
+.navbar-menu__item {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .navbar-menu__link {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .logo {
@@ -503,7 +506,7 @@ template {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-left: 3px;
+  margin-left: 2px;
   margin-right: 3px;
 }
 
@@ -565,8 +568,19 @@ template {
 }
 
 .hotel-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.hotel-stars__item:not(:last-child) {
+  margin-right: 3px;
 }
 
 .hotel-grid {
@@ -1177,12 +1191,15 @@ template {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar-menu__link {
+  .navbar-menu__item {
     font-size: 12px;
     line-height: 15px;
   }
+  .breadcrumb-list__item:not(:last-child)::after {
+    margin-left: 1px;
+  }
   .hotel {
-    padding-bottom: 60px;
+    padding-bottom: 57px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1203,7 +1220,12 @@ template {
     margin-bottom: 30px;
   }
   .booking {
+    padding-left: 22px;
+    padding-right: 22px;
     width: 340px;
+  }
+  .booking-price__pricetag {
+    line-height: 30px;
   }
   .map {
     width: 340px;
@@ -1352,11 +1374,11 @@ template {
   }
   .newsletter-title {
     max-width: 350px;
-    margin-bottom: 37px;
+    margin-bottom: 32px;
     font-size: 20px;
     line-height: 25px;
   }
-  .newsletter__strong {
+  .newsletter-title__strong {
     font-size: 30px;
     line-height: 48px;
   }
@@ -1378,10 +1400,10 @@ template {
             transform: translateX(-50%);
   }
   .reviews-slider__button--prev {
-    margin-left: -75px;
+    margin-left: -88px;
   }
   .reviews-slider__button--next {
-    margin-left: 75px;
+    margin-left: 88px;
   }
   .card {
     max-width: 278px;
@@ -1420,6 +1442,9 @@ template {
   .activities__card {
     margin-bottom: 20px;
   }
+  .activities__card:nth-child(2) {
+    margin-bottom: 28px;
+  }
   .card {
     max-width: 576px;
     width: 100%;
@@ -1427,8 +1452,25 @@ template {
 }
 
 @media (max-width: 380px) {
+  .container {
+    max-width: 0;
+    min-width: 280px;
+  }
+  .navbar-top {
+    padding-top: 24px;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
+  }
+  .hotel-stars {
+    margin-right: 14px;
+    margin-top: 5px;
+  }
+  .hotel-name {
+    line-height: 26px;
+  }
   .hotel-slider {
-    height: 170px;
+    height: 180px;
   }
   .hotel-slider__button--next {
     right: 10px;
@@ -1438,6 +1480,10 @@ template {
   }
   .map {
     height: 170px;
+  }
+  .newsletter-wrapper {
+    padding-left: 7px;
+    padding-right: 7px;
   }
   .newsletter-title {
     max-width: 280px;
