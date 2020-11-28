@@ -1,0 +1,151 @@
+.packages
+  padding: 40px 0 70px 0
+  &-title
+    margin: 0 0 65px
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-wrapper
+    display: grid
+    grid-template: repeat(2, 500px) / repeat(3, minmax(300px, 1fr))
+    grid-gap: 30px
+    grid-template-areas: "item_1 item_1 item_2" "item_3 item_4 item_5"
+  &__item
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    overflow: hidden
+    &_1
+      grid-area: item_1
+      flex-direction: row
+    &_2
+      grid-area: item_2
+    &_3
+      grid-area: item_3
+    &_4
+      grid-area: item_4
+    &_5
+      grid-area: item_5
+  &__flash
+    position: absolute
+    top: 26px
+    left: 0
+    padding: 4px 9px
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    border-radius: 0px 4px 4px 0px
+    color: $text-color-light
+    background-color: $primary-color
+    &_main
+      padding: 8px 12px
+      font-size: 12px
+      line-height: 15px
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &-description
+    padding: 30px 21px 25px 32px
+    color: $text-color-light
+    background-color: $background-dark
+    &_main
+      width: 365px
+      padding-top: 46px
+      padding-left: 43px
+    &__info
+      margin-bottom: 43px
+      margin-top: 23px
+      &_main
+        margin-top: 0
+        margin-bottom: 55px
+  &-info
+    &__item
+      display: flex
+      align-items: center
+      &:not(:last-child)
+        margin-bottom: 11px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__icon
+      margin-right: 14px
+  &__stars
+    display: flex
+    align-items: center
+    height: 8px
+    margin-bottom: 5px
+  &__title
+    // Не понимаю, почему марджин не работает
+    // margin-bottom: 27px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    &_main
+      margin-bottom: 0
+  &__text
+    max-width: 299px
+    margin: 27px 0 43px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160.6%
+  &__booking
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__price
+    position: relative
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    &_old
+      position: absolute
+      top: -23px
+      left: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+    // &::before
+    //   content: '$10,500'
+    //   position: absolute
+    //   top: -23px
+    //   left: 0
+    //   font-style: normal
+    //   font-weight: normal
+    //   font-size: 14px
+    //   line-height: 18px
+    //   text-decoration-line: line-through
+    //   color: inherit
+  &__button
+    padding: 10px 26px
+    font-family: 'Nunito', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    color: $text-color-light
+    background-color: $primary-color
+.image
+  &-container
+    position: relative
+    max-width: 350px
+    height: 250px
+    &_main
+      max-width: 365px
+      height: 500px
+.stars
+  &__item
+    &:not(:last-child)
+      margin-right: 3px
