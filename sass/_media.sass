@@ -6,6 +6,16 @@
       width: 590px
   .card
     width: 230px
+  .packages
+    &-description
+      &_main
+        padding-left: 32px
+    &__text
+      margin-bottom: 27px
+  .image
+    &-container
+      &_main
+        max-width: 315px
 
 @media (max-width: 992px)
   .container
@@ -56,6 +66,19 @@
         line-height: 30px
   .map
     width: 340px
+  .packages
+    padding-bottom: 60px
+    &-title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 45px
+    &-wrapper
+      grid-template: repeat(3, 500px) / repeat(2, minmax(300px, 1fr))
+      grid-template-areas: "item_1 item_1" "item_2 item_3" "item_4 item_5"
+  .image
+    &-container
+      &_main
+        max-width: 350px
   .newsletter
     padding: 92px 0 93px 0
     &::after
@@ -139,6 +162,25 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-wrapper
+      grid-template: repeat(5, 500px) / 1fr
+      grid-template-areas: "item_1" "item_2" "item_3" "item_4" "item_5"
+    &-description
+      &_main
+        flex-basis: 50%
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__text
+      font-size: 12px
+      line-height: 160%
+  .image
+    &-container
+      max-width: none
+      width: 100%
+      &_main
+        flex-basis: 50%
   .newsletter
     padding: 76px 0 83px 0
     &-wrapper
@@ -186,6 +228,27 @@
       height: 250px
     &__slider
       margin-bottom: 20px
+  .packages
+    padding-top: 20px
+    padding-bottom: 50px
+    &-title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 35px
+    &-wrapper
+      grid-template-rows: repeat(5, fit-content(700px))
+    &__item
+      &_1
+        flex-direction: column
+    &-description
+      &_main
+        width: 100%
+        height: auto
+        padding: 30px 21px 25px 32px
+  .image
+    &-container
+      &_main
+        height: 250px
   .reviews
     &-title
       margin: 0 auto 42px
@@ -210,7 +273,7 @@
 @media (max-width: 380px)
   .container
     // костыль?
-    max-width: 0
+    max-width: none
     min-width: 280px
   .navbar
     &-top

@@ -81,6 +81,10 @@
     align-items: center
     height: 8px
     margin-bottom: 5px
+  &-stars
+    &__item
+      &:not(:last-child)
+        margin-right: 3px
   &__title
     // Не понимаю, почему марджин не работает
     // margin-bottom: 27px
@@ -145,7 +149,3 @@
     &_main
       max-width: 365px
       height: 500px
-.stars
-  &__item
-    &:not(:last-child)
-      margin-right: 3px
