@@ -16,6 +16,14 @@
     &-container
       &_main
         max-width: 315px
+  .footer
+    &__title
+      &_categories
+        max-width: 150px
+    &__input
+      flex-basis: 100%
+    &__conditions
+      width: 620px
 
 @media (max-width: 992px)
   .container
@@ -106,6 +114,52 @@
       margin-bottom: 20px
   .card
     width: 340px
+  .footer
+    padding-top: 66px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      margin-bottom: 54px
+    &__logo
+      grid-row: 1 / 2
+      grid-column: 1
+      width: 96px
+      margin-bottom: 22px
+    &__social
+      grid-row: 1 / 2
+      grid-column: span 5
+      align-self: center
+      margin-top: 17px
+      margin-left: 57px
+    &__list
+      margin-bottom: 25px
+      &_categories
+        grid-row: 2 / 3
+        grid-column: span 2
+      &_legal
+        grid-column: span 2
+        margin-left: 5px
+      &_information
+        grid-column: span 2
+        margin-left: -51px
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+        margin-bottom: 11px
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__title
+      &_categories
+        max-width: none
+    &__form
+      width: 539px
+    &__input
+      flex-basis: 255px
+    &__textarea
+      margin-bottom: 21px
+    &__conditions
+      width: 100%
 
 @media (max-width: 767px)
   .container
@@ -216,6 +270,10 @@
   .card
     max-width: 278px
     width: 48%
+  .footer
+    &__title
+      &_categories
+        max-width: 150px
 
 @media (max-width: 576px)
   .logo
@@ -269,6 +327,72 @@
   .card
     max-width: 576px
     width: 100%
+  .footer
+    padding-top: 62px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 29px
+      margin-bottom: 29px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      margin-bottom: 9px
+    &__social
+      grid-row: 2
+      grid-column: 1
+      margin-top: 0
+      margin-left: 0
+      flex-wrap: wrap
+    &__title
+      &_inline
+        flex-basis: 100%
+        margin-left: 0
+        margin-bottom: 22px
+      &_categories
+        max-width: none
+      &_contact-form
+        margin-bottom: 15px
+    &__list
+      &_information
+        grid-row: 4
+        grid-column: 1
+        margin-left: 0
+        margin-bottom: 0
+      &_legal
+        grid-row: 3
+        grid-column: 1
+        margin-bottom: 0
+      &_categories
+        grid-row: 5
+        grid-column: 1
+        margin-bottom: 0
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+        margin-bottom: 6px
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__text
+      margin-bottom: 20px
+    &__form
+      width: 100%
+      max-width: 281px
+    &__input
+      flex-basis: 100%
+    &__textarea
+      margin-bottom: 14px
+    &__info
+      margin-bottom: 16px
+      flex-basis: 100%
+    &__button
+      order: 1
+    &__conditions
+      flex-wrap: wrap
+      &-links
+        flex-basis: 100%
+        margin-bottom: 10px
 
 @media (max-width: 380px)
   .container
