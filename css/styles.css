@@ -1402,8 +1402,9 @@ template {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(min-content, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-auto-rows: minmax(34px, -webkit-min-content);
   grid-auto-rows: minmax(34px, min-content);
   -webkit-box-align: start;
