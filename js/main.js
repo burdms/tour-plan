@@ -85,3 +85,8 @@ function init() {
 // });
 
 // $(".newsletter").parallax({imageSrc: "../img/newsletter-background.jpg", speed: 0});
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom_visible");
+});

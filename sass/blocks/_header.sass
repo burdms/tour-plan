@@ -25,6 +25,9 @@
     &__item
       font-size: 14px
       line-height: 18px
+      &:nth-child(1), &:nth-child(2)
+        display: none
+        margin-right: 0
     &__link
       color: inherit
       text-decoration: none
@@ -67,3 +70,8 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+.navbar
+  &__user, &__search
+    &_mobile
+      &_visible
+        display: none

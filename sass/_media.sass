@@ -45,10 +45,16 @@
       padding-bottom: 22px
       padding-left: 14px
       &__item
+        font-style: normal
+        font-weight: bold
         font-size: 12px
         line-height: 15px
         &:not(:last-child)
-          margin-right: 28px
+          margin-right: 27px
+        &:nth-child(1), &:nth-child(2)
+          margin-right: 0
+          font-weight: normal
+
   .breadcrumb
     &-list
       &__item
@@ -162,12 +168,64 @@
       width: 100%
 
 @media (max-width: 767px)
+  body
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
   .navbar
-    &-menu, &__user, &__search
+    &__user
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          flex-direction: column
+          margin-bottom: 27px
+    &__search
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          width: 243px
+          margin-left: 0
+          margin-bottom: 39px
+    &_mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-bottom
       display: none
+      position: fixed
+      top: 78px
+      right: 0
+      bottom: 0
+      left: 0
+      &_visible
+        display: block
+    &-menu
+      flex-direction: column
+      padding: 31px 0
+      &__item
+        &:not(:last-child)
+          margin: 0 0 20px
+        &:nth-child(1), &:nth-child(2)
+          display: flex
+          margin-bottom: 0
+  .user
+    &__avatar
+      margin-bottom: 10px
+    &__name
+      margin-left: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      color: $text-color-light
   .menu
     &-button
       display: flex
@@ -395,6 +453,8 @@
         margin-bottom: 10px
 
 @media (max-width: 380px)
+  body
+    padding-top: 72px
   .container
     // костыль?
     max-width: none
@@ -402,6 +462,8 @@
   .navbar
     &-top
       padding-top: 24px
+    &-bottom
+      top: 72px
   .hotel
     &-info
       padding-bottom: 38px
