@@ -1490,6 +1490,12 @@ template {
   list-style: none;
 }
 
+.footer__ul_contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .footer__ul_contact-details {
   padding: 0 0 0 6px;
 }
@@ -1515,6 +1521,12 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__link_contact {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #BDBDBD;
 }
 
 .footer__social {
@@ -2342,7 +2354,6 @@ template {
   }
   .footer__form {
     width: 100%;
-    max-width: 281px;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
@@ -2423,6 +2434,9 @@ template {
   }
   .reviews-slider__item {
     max-width: 280px;
+  }
+  .footer__form {
+    max-width: 281px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
