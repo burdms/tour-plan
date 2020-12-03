@@ -12,7 +12,8 @@ $title = "New request Best Tour Plan";
 $body = "
 <h2>New request</h2>
 <b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
+<b>Phone:</b> $phone<br>
+<b>E-mail:</b> $email<br><br>
 <b>Message:</b><br>$message
 ";
 
