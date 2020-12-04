@@ -15,7 +15,18 @@ if($formName == "newsletter") {
     <h2>New subscription</h2>
     <b>E-mail:</b> $email
     ";
-}else{
+}elseif ($formName == "modalBooking") {
+    $title = "New booking request Best Tour Plan";
+    $body = "
+    <h2>New booking request</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br>
+    <b>E-mail:</b> $email<br><br>
+    <b>Message:</b><br>$message
+    ";
+}
+
+else{
     $title = "New request Best Tour Plan";
     $body = "
     <h2>New request</h2>

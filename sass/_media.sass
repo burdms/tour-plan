@@ -176,6 +176,9 @@
       margin-bottom: 21px
     &__conditions
       width: 100%
+  .modal
+    &__dialog
+      padding: 33px 47px
 
 @media (max-width: 767px)
   body
@@ -343,6 +346,17 @@
     &__title
       &_categories
         max-width: 150px
+  .modal
+    &__dialog
+      height: 100%
+      overflow-y: auto
+      max-width: none
+      width: 60%
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__button
+      order: 1
 
 @media (max-width: 576px)
   .logo
@@ -461,6 +475,10 @@
       &-links
         flex-basis: 100%
         margin-bottom: 10px
+  .modal
+    &__dialog
+      padding: 33px
+      width: 80%
 
 @media (max-width: 380px)
   body
@@ -508,3 +526,6 @@
   .footer
     &__form
       max-width: 281px
+  .modal
+    &__dialog
+      width: 100%
