@@ -100,10 +100,14 @@ $(document).ready(function () {
   closeModalButton.on("click", closeModal);
   closeOverlay.on("click", closeModal);
 
+  var body = $("body");
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+
   function openModal() {
-    var body = $("body");
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
+    // var body = $("body");
+    // var modalOverlay = $(".modal__overlay");
+    // var modalDialog = $(".modal__dialog");
     body.addClass("overflow_hidden");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
@@ -111,20 +115,20 @@ $(document).ready(function () {
 
   function closeModal(event) {
     event.preventDefault();
-    var body = $("body");
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    body.removeClass("overflow_hidden");
+    // var body = $("body");
+    // var modalOverlay = $(".modal__overlay");
+    // var modalDialog = $(".modal__dialog");
+    // body.removeClass("overflow_hidden");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   }
 
   $(document).keydown(function (event) {
     if (event.keyCode == 27) {
-      var body = $("body");
-      var modalOverlay = $(".modal__overlay");
-      var modalDialog = $(".modal__dialog");
-      body.removeClass("overflow_hidden");
+      // var body = $("body");
+      // var modalOverlay = $(".modal__overlay");
+      // var modalDialog = $(".modal__dialog");
+      // body.removeClass("overflow_hidden");
       modalOverlay.removeClass("modal__overlay_visible");
       modalDialog.removeClass("modal__dialog_visible");
     }
