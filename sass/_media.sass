@@ -348,8 +348,8 @@
         max-width: 150px
   .modal
     &__dialog
-      height: 100%
-      overflow-y: auto
+      // height: 100%
+      // overflow-y: auto
       max-width: none
       width: 60%
     &__info
@@ -480,6 +480,12 @@
       padding: 33px
       width: 80%
 
+@media (max-height: 520px)
+  .modal
+    &__dialog
+      height: 99vh
+      overflow-y: auto
+
 @media (max-width: 380px)
   body
     padding-top: 72px
@@ -528,4 +534,4 @@
       max-width: 281px
   .modal
     &__dialog
-      width: 100%
+      width: 95%

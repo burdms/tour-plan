@@ -118,7 +118,7 @@ $(document).ready(function () {
     // var body = $("body");
     // var modalOverlay = $(".modal__overlay");
     // var modalDialog = $(".modal__dialog");
-    // body.removeClass("overflow_hidden");
+    body.removeClass("overflow_hidden");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   }
@@ -128,7 +128,7 @@ $(document).ready(function () {
       // var body = $("body");
       // var modalOverlay = $(".modal__overlay");
       // var modalDialog = $(".modal__dialog");
-      // body.removeClass("overflow_hidden");
+      body.removeClass("overflow_hidden");
       modalOverlay.removeClass("modal__overlay_visible");
       modalDialog.removeClass("modal__dialog_visible");
     }

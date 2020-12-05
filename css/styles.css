@@ -2457,8 +2457,6 @@ template {
     max-width: 150px;
   }
   .modal__dialog {
-    height: 100%;
-    overflow-y: auto;
     max-width: none;
     width: 60%;
   }
@@ -2650,6 +2648,13 @@ template {
   }
 }
 
+@media (max-height: 520px) {
+  .modal__dialog {
+    height: 99vh;
+    overflow-y: auto;
+  }
+}
+
 @media (max-width: 380px) {
   body {
     padding-top: 72px;
@@ -2706,7 +2711,7 @@ template {
     max-width: 281px;
   }
   .modal__dialog {
-    width: 100%;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
