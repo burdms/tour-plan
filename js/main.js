@@ -1,16 +1,13 @@
 $(document).ready(function () {
   var hotelSlider = new Swiper(".hotel-slider", {
-    // Optional parameters
     loop: true,
     effect: "fade",
 
-    // Navigation arrows
     navigation: {
       nextEl: ".hotel-slider__button--next",
       prevEl: ".hotel-slider__button--prev",
     },
 
-    // Keyboard swiping
     keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -18,18 +15,15 @@ $(document).ready(function () {
   });
 
   var reviewsSlider = new Swiper(".reviews-slider", {
-    // Optional parameters
     loop: true,
     effect: "slide",
     autoHeight: true,
 
-    // Navigation arrows
     navigation: {
       nextEl: ".reviews-slider__button--next",
       prevEl: ".reviews-slider__button--prev",
     },
 
-    // Keyboard swiping
     keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -67,25 +61,7 @@ $(document).ready(function () {
       );
 
     myMap.geoObjects.add(myGeoObject);
-    // .add(
-    //   new ymaps.Placemark(
-    //     [7.89074638, 98.29473329],
-    //     {
-    //       balloonContent: "DoubleTree by Hilton Phuket Banthai Resort",
-    //     },
-    //     {
-    //       preset: "islands#blueHotelIcon",
-    //     }
-    //   )
-    // );
   }
-
-  // var image = document.getElementsByClassName("newsletter");
-  // new simpleParallax(image, {
-  //   scale: 1.5,
-  // });
-
-  // $(".newsletter").parallax({imageSrc: "../img/newsletter-background.jpg", speed: 0});
 
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
@@ -105,9 +81,6 @@ $(document).ready(function () {
   var modalDialog = $(".modal__dialog");
 
   function openModal() {
-    // var body = $("body");
-    // var modalOverlay = $(".modal__overlay");
-    // var modalDialog = $(".modal__dialog");
     body.addClass("overflow_hidden");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
@@ -115,9 +88,6 @@ $(document).ready(function () {
 
   function closeModal(event) {
     event.preventDefault();
-    // var body = $("body");
-    // var modalOverlay = $(".modal__overlay");
-    // var modalDialog = $(".modal__dialog");
     body.removeClass("overflow_hidden");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
@@ -125,12 +95,40 @@ $(document).ready(function () {
 
   $(document).keydown(function (event) {
     if (event.keyCode == 27) {
-      // var body = $("body");
-      // var modalOverlay = $(".modal__overlay");
-      // var modalDialog = $(".modal__dialog");
       body.removeClass("overflow_hidden");
       modalOverlay.removeClass("modal__overlay_visible");
       modalDialog.removeClass("modal__dialog_visible");
     }
+  });
+  $(".modal__form").validate({
+    messages: {
+      name: "Please specify your name",
+      phone: {
+        required: "We need your phone number to contact you",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+  $(".newsletter__subscribe").validate({
+    errorClass: "error_newsletter",
+    messages: {
+      email: {
+        required: "We need your email address to add you in our newsletter",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+  $(".footer__input_phone").mask("+7 (999) 999-99-99");
+  $(".modal__input_phone").mask("+7 (999) 999-99-99");
+  $(".footer__form").validate({
+    messages: {
+      name: "Please specify your name",
+      phone: {
+        required: "We need your phone number to contact you",
+      },
+    },
   });
 });
