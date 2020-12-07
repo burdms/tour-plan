@@ -20,6 +20,8 @@
     &__title
       &_categories
         max-width: 150px
+    &-group
+      flex-wrap: wrap
     &__input
       &-group
         flex-basis: 100%
@@ -358,7 +360,8 @@
       flex-basis: 100%
     &__button
       order: 1
-
+  .error, .error_newsletter
+    font-size: 12px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -525,10 +528,6 @@
       max-width: 280px
     &__subscribe
       width: 100%
-  .subscribe
-    &__input
-      &-group
-        width: 215px
   .reviews
     &-slider
       &__text

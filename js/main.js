@@ -100,15 +100,20 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog_visible");
     }
   });
+
+  $(".footer__input_phone").mask("+7 (999) 999-99-99");
+  $(".modal__input_phone").mask("+7 (999) 999-99-99");
+
   $(".modal__form").validate({
     messages: {
       name: "Please specify your name",
       phone: {
-        required: "We need your phone number to contact you",
+        required: "Example: +7 (999) 999-99-99",
+        minlength: "Example: +7 (999) 999-99-99",
       },
       email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com",
+        required: "Example: name@domain.com",
+        email: "Example: name@domain.com",
       },
     },
   });
@@ -116,18 +121,18 @@ $(document).ready(function () {
     errorClass: "error_newsletter",
     messages: {
       email: {
-        required: "We need your email address to add you in our newsletter",
-        email: "Your email address must be in the format of name@domain.com",
+        required: "Example: name@domain.com",
+        email: "Example: name@domain.com",
       },
     },
   });
-  $(".footer__input_phone").mask("+7 (999) 999-99-99");
-  $(".modal__input_phone").mask("+7 (999) 999-99-99");
+
   $(".footer__form").validate({
     messages: {
       name: "Please specify your name",
       phone: {
-        required: "We need your phone number to contact you",
+        required: "Example: +7 (999) 999-99-99",
+        minlength: "Example: +7 (999) 999-99-99",
       },
     },
   });
