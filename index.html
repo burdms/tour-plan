@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -213,7 +214,12 @@
         <h2 class="packages-title">Other Packages</h2>
 
         <div class="packages-wrapper">
-          <div class="packages__item packages__item_1">
+          <div
+            class="packages__item packages__item_1"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+          >
             <div class="image-container image-container_main">
               <span class="packages__flash packages__flash_main">Flash Offer</span>
               <img src="img/packages-1.jpg" alt="Hotel image" class="packages__image" />
@@ -273,7 +279,13 @@
           </div>
           <!-- /.packages__item packages__item_1 -->
 
-          <div class="packages__item packages__item_2">
+          <div
+            class="packages__item packages__item_2"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+            data-aos-delay="50"
+          >
             <div class="image-container">
               <span class="packages__flash">Flash Offer</span>
               <img src="img/packages-2.jpg" alt="Hotel image" class="packages__image" />
@@ -318,7 +330,12 @@
           </div>
           <!-- /.packages__item packages__item_2 -->
 
-          <div class="packages__item packages__item_3">
+          <div
+            class="packages__item packages__item_3"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+          >
             <div class="image-container">
               <span class="packages__flash">Flash Offer</span>
               <img src="img/packages-3.jpg" alt="Hotel image" class="packages__image" />
@@ -363,7 +380,13 @@
           </div>
           <!-- /.packages__item packages__item_3 -->
 
-          <div class="packages__item packages__item_4">
+          <div
+            class="packages__item packages__item_4"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+            data-aos-delay="50"
+          >
             <div class="image-container">
               <span class="packages__flash">Flash Offer</span>
               <img src="img/packages-4.jpg" alt="Hotel image" class="packages__image" />
@@ -408,7 +431,13 @@
           </div>
           <!-- /.packages__item packages__item_4 -->
 
-          <div class="packages__item packages__item_5">
+          <div
+            class="packages__item packages__item_5"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
             <div class="image-container">
               <span class="packages__flash">Flash Offer</span>
               <img src="img/packages-5.jpg" alt="Hotel image" class="packages__image" />
@@ -466,11 +495,23 @@
       data-image-src="./img/newsletter-background.jpg"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title">
+        <h2
+          class="newsletter-title"
+          data-aos="fade"
+          data-aos-easing="ease-out"
+          data-aos-duration="500"
+        >
           subscribe to our<span class="newsletter-title__strong">newsletter</span>
         </h2>
 
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+          data-aos="fade"
+          data-aos-easing="ease-out"
+          data-aos-duration="500"
+        >
           <div class="subscribe__input-group">
             <input
               type="email"
@@ -493,7 +534,12 @@
       <div class="container">
         <h2 class="reviews-title">What people think about us</h2>
 
-        <div class="swiper-container reviews-slider">
+        <div
+          class="swiper-container reviews-slider"
+          data-aos="fade"
+          data-aos-easing="ease-out"
+          data-aos-duration="700"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -613,7 +659,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+          >
             <img
               src="img/activities-1.jpg"
               alt="The curious corner of chamarel"
@@ -624,14 +675,26 @@
           </div>
           <!-- /. card -->
 
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+            data-aos-delay="50"
+          >
             <img src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image" />
             <h3 class="card__title card__title_2">Gymkhana club golf course</h3>
             <button class="button card__button">Book Now</button>
           </div>
           <!-- /. card -->
 
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
             <img
               src="img/activities-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -642,7 +705,13 @@
           </div>
           <!-- /. card -->
 
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="500"
+            data-aos-delay="150"
+          >
             <img
               src="img/activities-4.jpg"
               alt="The blue marine discovery quest"
@@ -896,6 +965,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
