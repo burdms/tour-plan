@@ -117,6 +117,7 @@ $(document).ready(function () {
       },
     },
   });
+
   $(".newsletter__subscribe").validate({
     errorClass: "error_newsletter",
     messages: {

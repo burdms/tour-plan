@@ -51,6 +51,7 @@ input:focus, textarea:focus {
 .error_newsletter {
   position: absolute;
   top: 60px;
+  color: #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
