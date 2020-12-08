@@ -50,7 +50,7 @@ input:focus, textarea:focus {
 
 .error_newsletter {
   position: absolute;
-  top: 60px;
+  bottom: -20px;
   color: #EC1F46;
 }
 
