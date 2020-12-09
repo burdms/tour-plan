@@ -127,9 +127,5 @@ $(document).ready(function () {
     },
   });
 
-  $(window).width(function () {
-    if ($(window).width() > 992) {
-      AOS.init();
-    }
-  });
+  AOS.init({ disable: "mobile" });
 });
