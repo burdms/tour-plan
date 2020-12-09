@@ -30,37 +30,26 @@ $(document).ready(function () {
     },
   });
 
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map(
-        "map",
-        {
-          center: [7.89074638, 98.29473329],
+  let map_container = document.getElementById("map-container");
+  let options_map = {
+    once: true,
+    passive: true,
+    capture: true,
+  };
+  map_container.addEventListener("click", start_lazy_map, options_map);
+  map_container.addEventListener("mouseover", start_lazy_map, options_map);
+  map_container.addEventListener("touchstart", start_lazy_map, options_map);
+  map_container.addEventListener("touchmove", start_lazy_map, options_map);
 
-          zoom: 17,
-        },
-        {
-          searchControlProvider: "yandex#search",
-        }
-      ),
-      myGeoObject = new ymaps.GeoObject(
-        {
-          geometry: {
-            type: "Point",
-            coordinates: [7.89074638, 98.29473329],
-          },
-          properties: {
-            hintContent: "Phuket Banthai Resort",
-            balloonContentHeader: "DoubleTree by Hilton",
-            balloonContentBody: "Phuket Banthai Resort",
-          },
-        },
-        {
-          iconColor: "#1faee9",
-        }
-      );
-
-    myMap.geoObjects.add(myGeoObject);
+  let map_loaded = false;
+  function start_lazy_map() {
+    if (!map_loaded) {
+      let map_block = document.getElementById("gmap_lazy");
+      map_loaded = true;
+      map_block.setAttribute("src", map_block.getAttribute("data-src"));
+      map_block.removeAttribute("data-src");
+      console.log("GMAP LOADED");
+    }
   }
 
   var menuButton = document.querySelector(".menu-button");
@@ -138,5 +127,9 @@ $(document).ready(function () {
     },
   });
 
-  AOS.init();
+  $(window).width(function () {
+    if ($(window).width() > 992) {
+      AOS.init();
+    }
+  });
 });

@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a223d" />
+    <meta name="msapplication-TileColor" content="#0a223d" />
+    <meta name="theme-color" content="#0a223d" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
@@ -17,7 +24,7 @@
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo"
+          <a href="/best-tour-plan" class="logo"
             ><img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image"
           /></a>
 
@@ -190,14 +197,21 @@
             </div>
             <!-- /.booking -->
 
-            <div class="map hotel-booking__map" id="map">
-              <!-- <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.504796923806!2d7.664656767326022!3d45.03497720624837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812b6335fb6cb%3A0x61bd5025911ce106!2sDoubleTree%20by%20Hilton%20Turin%20Lingotto!5e0!3m2!1sen!2sit!4v1606241679793!5m2!1sen!2sit"
+            <div class="map hotel-booking__map" id="map-container">
+              <!-- <script
+                id="gmap_lazy"
+                async
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.504796923806!2d7.664656767326022!3d45.03497720624837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812b6335fb6cb%3A0x61bd5025911ce106!2sDoubleTree%20by%20Hilton%20Turin%20Lingotto!5e0!3m2!1sen!2sit!4v1606241679793!5m2!1sen!2sit"
+              ></script> -->
+              <iframe
+                id="gmap_lazy"
+                async
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.504796923806!2d7.664656767326022!3d45.03497720624837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812b6335fb6cb%3A0x61bd5025911ce106!2sDoubleTree%20by%20Hilton%20Turin%20Lingotto!5e0!3m2!1sen!2sit!4v1606241679793!5m2!1sen!2sit"
                 class="map__iframe"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
-              ></iframe> -->
+              ></iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -731,7 +745,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo"
+          <a href="/best-tour-plan" class="footer__logo"
             ><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="footer__logo-image"
           /></a>
 
@@ -834,9 +848,6 @@
                     (08:00 am – 14:00 pm)
                   </li>
                 </ul>
-                <!-- Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br /> -->
               </li>
 
               <li class="footer__li footer__li_contact-details">
@@ -960,7 +971,6 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=cc91c152-4f34-4003-83ba-daa268468513&lang=ru_RU"></script>
-    <!-- <script src="js/simpleParallax.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
