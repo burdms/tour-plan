@@ -83,13 +83,17 @@
     &-slider
       width: 100%
     &__slider
+      margin-left: 0
       margin-bottom: 30px
   .booking
+    padding-top: 30px
+    padding-bottom: 26px
     padding-left: 22px
     padding-right: 22px
     width: 340px
     &-price
       &__pricetag
+        margin-bottom: 0
         line-height: 30px
   .map
     width: 340px
@@ -127,6 +131,12 @@
           display: none
       &__text
         max-width: 455px
+      &__button
+        top: 50%
+        &--next
+          right: 0
+        &--prev
+          left: 0
   .activities
     padding-bottom: 50px
     &__card
@@ -147,7 +157,7 @@
       grid-row: 1 / 2
       grid-column: span 5
       align-self: center
-      margin-top: 17px
+
       margin-left: 57px
     &__list
       margin-bottom: 25px
@@ -362,6 +372,7 @@
       order: 1
   .error, .error_newsletter
     font-size: 12px
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -385,11 +396,19 @@
     &__item
       &_1
         flex-direction: column
+    &__stars
+      display: none
+    &__text
+      display: none
     &-description
       &_main
         width: 100%
         height: auto
         padding: 30px 21px 25px 32px
+      &__info
+        &_main
+          margin-bottom: 43px
+          margin-top: 23px
   .image
     &-container
       &_main
@@ -409,8 +428,15 @@
       line-height: 23px
     &__card
       margin-bottom: 20px
-      &:nth-child(2)
+      &_1
+        order: 0
+      &_2
+        order: 2
+      &_3
+        order: 1
         margin-bottom: 28px
+      &_4
+        order: 4
   .card
     max-width: 576px
     width: 100%
@@ -480,6 +506,10 @@
       &-links
         flex-basis: 100%
         margin-bottom: 10px
+        &-item
+          &:not(:last-child)
+            margin-right: 11px
+
   .modal
     &__dialog
       padding: 33px
@@ -540,3 +570,6 @@
   .modal
     &__dialog
       width: 95%
+@media (max-width: 320px)
+  .container
+    width: 280px
