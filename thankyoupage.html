@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Tour Plan - Hotel Booking</title>
+    <title>Best Tour Plan - Hotel Booking | Thank you page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -208,9 +209,6 @@
                     (08:00 am – 14:00 pm)
                   </li>
                 </ul>
-                <!-- Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br /> -->
               </li>
 
               <li class="footer__li footer__li_contact-details">
@@ -228,18 +226,32 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_contact-form">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer-group">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input footer__input_phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="18"
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+              </div>
+              <!-- /.input-group -->
+
               <textarea class="footer__textarea" placeholder="Message" name="message"></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -275,11 +287,13 @@
     </footer>
     <!-- /.footer -->
 
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=cc91c152-4f34-4003-83ba-daa268468513&lang=ru_RU"></script>
-    <!-- <script src="js/simpleParallax.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/thanks.js"></script>
   </body>
 </html>
