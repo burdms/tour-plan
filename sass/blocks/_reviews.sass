@@ -49,10 +49,12 @@
       background-color: transparent
       &--prev
         background-image: url(../img/reviews-arrow-prev.svg)
-        left: 0
+        left: 19px
+        top: 148px
       &--next
         background-image: url(../img/reviews-arrow-next.svg)
-        right: 0
+        right: 17px
+        top: 148px
     &__profile
       display: flex
       flex-direction: column
@@ -66,12 +68,13 @@
       border-radius: 50%
       object-fit: cover
     &__username
-      margin: 0 0 10px
+      margin: 0 0 10px 4px
       font-weight: bold
       font-size: 12px
       line-height: 15px
       color: $primary-color
     &__date
+      margin-left: 4px
       margin-bottom: 4px
       font-weight: normal
       font-size: 10px
@@ -79,10 +82,16 @@
     &__rating
       display: flex
       align-items: center
+      padding-left: 7px
+      height: 8px
     &__text
-      margin: 0 auto
+      margin: 0 -3px 0 3px
       max-width: 537px
       font-weight: normal
       font-size: 12px
       line-height: 160%
       text-align: justify
+  &-rating
+    &__item
+      &:not(:last-child)
+        margin-right: 3px
