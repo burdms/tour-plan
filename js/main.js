@@ -58,7 +58,7 @@ $(document).ready(function () {
     document.querySelector("body").classList.toggle("overflow_hidden");
   });
 
-  var modalButton = $(".booking-button");
+  var modalButton = $('[data-toggle="modal"]');
   var closeModalButton = $(".modal__close");
   var closeOverlay = $(".modal__overlay");
   modalButton.on("click", openModal);
@@ -70,9 +70,10 @@ $(document).ready(function () {
   var modalDialog = $(".modal__dialog");
 
   function openModal() {
+    var targetModal = $(this).attr("data-href");
     body.addClass("overflow_hidden");
-    modalOverlay.addClass("modal__overlay_visible");
-    modalDialog.addClass("modal__dialog_visible");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay_visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog_visible");
   }
 
   function closeModal(event) {

@@ -188,7 +188,9 @@
               </div>
               <!-- /.booking-quick -->
 
-              <button data-toggle="modal" class="button booking-button">View Other Options</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="button booking-button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
 
@@ -680,7 +682,9 @@
               class="card__image"
             />
             <h3 class="card__title card__title_1">The curious corner of chamarel</h3>
-            <button class="button card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#activities-modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
 
@@ -693,7 +697,9 @@
           >
             <img src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image" />
             <h3 class="card__title card__title_2">Gymkhana club golf course</h3>
-            <button class="button card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#activities-modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
 
@@ -710,7 +716,9 @@
               class="card__image"
             />
             <h3 class="card__title card__title_3">Tamarind falls hiking trip - full day</h3>
-            <button class="button card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#activities-modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
 
@@ -727,7 +735,9 @@
               class="card__image"
             />
             <h3 class="card__title card__title_4">The blue marine discovery quest</h3>
-            <button class="button card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#activities-modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
         </div>
@@ -921,7 +931,7 @@
     </footer>
     <!-- /.footer -->
 
-    <div class="modal">
+    <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
 
@@ -961,7 +971,48 @@
       </div>
       <!-- /.modal__dialog -->
     </div>
-    <!-- /.modal -->
+    <!-- /.booking-modal -->
+    <div class="modal" id="activities-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close" /></a>
+
+        <h3 class="modal__heading">Book additional activity</h3>
+
+        <form action="send.php" method="POST" class="modal__form">
+          <input type="hidden" name="formName" value="modalBooking" />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input modal__input_phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="18"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="modal__textarea" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.activities-modal -->
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
