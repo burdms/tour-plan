@@ -285,7 +285,13 @@
                   ><span class="packages__price_old">$ 10,500</span>$ 8,500</span
                 >
 
-                <button class="button button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#packages-modal"
+                  class="button button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__pricing -->
             </div>
@@ -336,7 +342,13 @@
                   ><span class="packages__price_old">$ 8,500</span>$ 3,000</span
                 >
 
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#packages-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__pricing -->
             </div>
@@ -386,7 +398,13 @@
                   ><span class="packages__price_old">$ 10,500</span>$ 9,000</span
                 >
 
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#packages-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__pricing -->
             </div>
@@ -437,7 +455,13 @@
                   ><span class="packages__price_old">$ 4,500</span>$ 2,500</span
                 >
 
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#packages-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__pricing -->
             </div>
@@ -488,7 +512,13 @@
                   ><span class="packages__price_old">$ 6,500</span>$ 3,500</span
                 >
 
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#packages-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__pricing -->
             </div>
@@ -992,6 +1022,47 @@
         <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close" /></a>
 
         <h3 class="modal__heading">Book additional activity</h3>
+
+        <form action="send.php" method="POST" class="modal__form">
+          <input type="hidden" name="formName" value="modalBooking" />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input modal__input_phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="18"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="modal__textarea" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.activities-modal -->
+    <div class="modal" id="packages-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close" /></a>
+
+        <h3 class="modal__heading">Book other hotels</h3>
 
         <form action="send.php" method="POST" class="modal__form">
           <input type="hidden" name="formName" value="modalBooking" />
