@@ -93,6 +93,7 @@ $(document).ready(function () {
 
   jQuery(function ($) {
     $(".modal__input_phone").mask("+7 (999) 999-99-99");
+    $(".footer__input_phone").mask("+7 (999) 999-99-99");
   });
 
   $(".modal__form").validate({
