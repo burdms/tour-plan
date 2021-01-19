@@ -25,7 +25,6 @@ if($formName == "newsletter") {
     <b>Message:</b><br>$message
     ";
 }
-
 else{
     $title = "New request Best Tour Plan";
     $body = "
@@ -36,7 +35,6 @@ else{
     ";
 }
 
-
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $mail->isSMTP();   
@@ -46,14 +44,14 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'dmitrii4webstart@gmail.com'; // Логин на почте
-    $mail->Password   = 'simplepass'; // Пароль на почте
+    $mail->Username   = 'example@gmail.com'; // Логин на почте
+    $mail->Password   = 'password'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('dmitrii4webstart@gmail.com', 'Dmitrii Burdin'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('example@gmail', 'Author name'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('burdms@yandex.ru');  
+    $mail->addAddress('example@yandex.ru');  
     // $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
     // Прикрипление файлов к письму
